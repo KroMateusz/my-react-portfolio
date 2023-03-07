@@ -1,0 +1,25 @@
+.footer {
+	position: fixed;
+	top: vh;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #1a88ab;
+}
+
+.footer div {
+	width: 100vw;
+}
+
+.footer svg {
+	margin: 1rem;
+	padding: 0.5rem;
+	font-size: 25px;
+	color: white;
+	cursor: pointer;
+}
+
+.footer p {
+	cursor: default;
+	font-size: 1.25rem;
+}
