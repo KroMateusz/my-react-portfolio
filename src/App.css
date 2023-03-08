@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+:root {
+	--primary: #3e497a;
+	--lighter: #1a88ab;
+	--darker: #634391;
+}
+
 .App {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Oswald', 'Helvetica', sans-serif;
 	text-align: center;
 }
 
