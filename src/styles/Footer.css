@@ -1,6 +1,5 @@
 .footer {
 	position: fixed;
-	top: vh;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -12,7 +11,9 @@
 }
 
 .footer svg {
-	margin: 1rem;
+	margin: 0.5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
 	padding: 0.5rem;
 	font-size: 25px;
 	color: white;
@@ -21,5 +22,6 @@
 
 .footer p {
 	cursor: default;
-	font-size: 1.25rem;
+	font-size: 1.15rem;
+	line-height: 0.5rem;
 }

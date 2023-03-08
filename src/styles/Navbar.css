@@ -13,11 +13,17 @@
 	color: white;
 }
 
+.links :nth-last-child(1) {
+	color: rgb(255, 166, 0);
+	border: 2px dotted rgba(255, 166, 1, 0.725);
+	padding: 0.5rem;
+}
+
 .navbar a {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
-	margin: 20px;
-	font-size: 25px;
+	margin: 30px;
+	font-size: 2rem;
 }
 
 .toggleButton {
@@ -56,7 +62,7 @@
 
 @media only screen and (max-width: 900px) {
 	.navbar a {
-		width: 70px;
+		width: 7rem;
 	}
 }
 
@@ -69,7 +75,7 @@
 	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
 	.toggleButton {
 		display: none;
 	}
