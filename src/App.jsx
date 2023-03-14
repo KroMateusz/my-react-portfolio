@@ -6,6 +6,7 @@ import Experience from './pages/Experience.jsx';
 import Contact from './pages/Contact.jsx';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
+import ProjectDisplay from './pages/ProjectDisplay.jsx';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 					<Route path='/' element={<Home />} />
 					<Route path='/projects' element={<Projects />} />
 					<Route path='/experience' element={<Experience />} />
+					<Route path='/project/:id' element={<ProjectDisplay />} />
 					<Route path='contact' element={<Contact />} />
 				</Routes>
 				<Footer />
