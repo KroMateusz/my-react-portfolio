@@ -1,7 +1,6 @@
 import React from 'react';
 import {
 	VerticalTimeline,
-	VerticalTimelineComponent,
 	VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -27,13 +26,17 @@ function Experience() {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className='vertical-timeline-element--education'
-					date='2020'
-					iconStyle={{ background: '#1f3d9d', color: '#fff' }}
+					date='2021'
+					iconStyle={{
+						background: '#1f3d9d',
+						color: '#fff',
+						text: 'left',
+					}}
 					icon={<SchoolIcon />}
 				>
 					<h3 className='vertical-timeline-element-title'>
 						Complete the basic courses of HTML, Bootstrap CSS, LESS,
-						SASS on Udemy and Codecademy. Writing
+						SASS on Udemy and Codecademy.
 					</h3>
 					<ul>
 						<p>
@@ -48,7 +51,7 @@ function Experience() {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className='vertical-timeline-element--education'
-					date='2020'
+					date='2021'
 					iconStyle={{ background: '#1f3d9d', color: '#fff' }}
 					icon={<SchoolIcon />}
 				>

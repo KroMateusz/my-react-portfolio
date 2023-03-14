@@ -20,7 +20,7 @@
 .about h2 {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 80px;
-	color: #f99f2a;
+	color: var(--orange);
 	height: 50px;
 }
 
