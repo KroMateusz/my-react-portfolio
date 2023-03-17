@@ -17,9 +17,9 @@
 	color: #f0f0f0;
 }
 
-.about h2 {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 80px;
+.about h1 {
+	font-family: 'Oswald', 'Helvetica', sans-serif;
+	font-size: 60px;
 	color: var(--orange);
 	height: 50px;
 }
@@ -28,6 +28,13 @@
 	width: 40%;
 	font-size: 30px;
 }
+
+.prompt img {
+	width: 50%;
+	margin: 2rem;
+	border-radius: 40%;
+}
+
 .prompt svg {
 	font-size: 60px;
 	margin: 5px;
