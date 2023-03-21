@@ -1,4 +1,5 @@
 import MyPhoto from '../assets/my-photo.png';
+import '../styles/PhotoSection.css';
 
 function PhotoSection() {
 	return (

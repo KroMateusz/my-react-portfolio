@@ -1,0 +1,17 @@
+.container {
+	height: 72.5vh;
+	font-size: 2rem;
+}
+
+.btn:hover {
+	color: red;
+	background-color: white;
+	transition: 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+	.container {
+		height: 75vh;
+		font-size: 1.5rem;
+	}
+}

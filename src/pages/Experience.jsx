@@ -10,11 +10,11 @@ import '../styles/Experience.css';
 function Experience() {
 	return (
 		<div className='experience'>
-			<VerticalTimeline lineColor='#1f3d9d'>
+			<VerticalTimeline lineColor='var(--primary)'>
 				<VerticalTimelineElement
 					className='vertical-timeline-element--education'
 					date='2020'
-					iconStyle={{ background: '#1f3d9d', color: '#fff' }}
+					iconStyle={{ background: 'var(--primary)', color: '#fff' }}
 					icon={<SchoolIcon />}
 				>
 					<h3 className='vertical-timeline-element-title'>
@@ -28,7 +28,7 @@ function Experience() {
 					className='vertical-timeline-element--education'
 					date='2021'
 					iconStyle={{
-						background: '#1f3d9d',
+						background: 'var(--primary)',
 						color: '#fff',
 						text: 'left',
 					}}
@@ -52,7 +52,7 @@ function Experience() {
 				<VerticalTimelineElement
 					className='vertical-timeline-element--education'
 					date='2021'
-					iconStyle={{ background: '#1f3d9d', color: '#fff' }}
+					iconStyle={{ background: 'var(--primary)', color: '#fff' }}
 					icon={<SchoolIcon />}
 				>
 					<h3 className='vertical-timeline-element-title'>
@@ -70,7 +70,7 @@ function Experience() {
 				<VerticalTimelineElement
 					className='vertical-timeline-element--education'
 					date='2021'
-					iconStyle={{ background: '#1f3d9d', color: '#fff' }}
+					iconStyle={{ background: 'var(--primary)', color: '#fff' }}
 					icon={<SchoolIcon />}
 				>
 					<h3 className='vertical-timeline-element-title'>
@@ -85,7 +85,7 @@ function Experience() {
 				<VerticalTimelineElement
 					className='vertical-timeline-element--education'
 					date='2022'
-					iconStyle={{ background: '#1f3d9d', color: '#fff' }}
+					iconStyle={{ background: 'var(--primary)', color: '#fff' }}
 					icon={<SchoolIcon />}
 				>
 					<h3 className='vertical-timeline-element-title'>
@@ -96,6 +96,18 @@ function Experience() {
 						VUe - The Complete Guide (incl. Ruter & Composition API)
 						- Maximilian Schwarzmuller
 					</p>
+				</VerticalTimelineElement>
+				<VerticalTimelineElement
+					className='vertical-timeline-element--education'
+					date='2023'
+					iconStyle={{ background: 'var(--primary)', color: '#fff' }}
+					icon={<SchoolIcon />}
+				>
+					<h3 className='vertical-timeline-element-title'>
+						Creating my own portfolio website using React, React
+						Router, Bootstrap, JSX, HTML, CSS. Adding the rest of
+						projects on the GitHub.
+					</h3>
 				</VerticalTimelineElement>
 			</VerticalTimeline>
 		</div>

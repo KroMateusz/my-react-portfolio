@@ -1,8 +1,8 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
 import PhotoSection from '../helpers/PhotoSection.jsx';
+import SkillsList from '../helpers/SkillsList.jsx';
 import '../styles/Home.css';
 
 function Home() {
@@ -17,20 +17,23 @@ function Home() {
 						programming, who gained knowledge independently using
 						YouTube, Udemy, and Codecademy.
 					</p>
-					<GitHubIcon />
-					<LinkedInIcon />
-					<EmailIcon />
+					<a
+						href='https://github.com/KroMateusz'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<GitHubIcon />
+					</a>
+					<a
+						href='https://www.linkedin.com/in/mateusz-krochmal-34936117b/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<LinkedInIcon />
+					</a>
 				</div>
 			</div>
-			<div className='skills'>
-				<h1>Skills</h1>
-				<ol className='skills-list'>
-					<li className='item'>
-						<h2>JS</h2>
-						<span></span>
-					</li>
-				</ol>
-			</div>
+			<SkillsList />
 		</div>
 	);
 }

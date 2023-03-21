@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Experience from './pages/Experience.jsx';

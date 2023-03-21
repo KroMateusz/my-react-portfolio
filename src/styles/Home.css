@@ -7,7 +7,7 @@
 
 .about {
 	width: 100%;
-	height: calc(100vh - 100px);
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -39,6 +39,11 @@
 	font-size: 60px;
 	margin: 5px;
 	color: white;
+}
+
+.prompt a {
+	margin: 1rem;
+	padding: 1rem;
 }
 
 .skills {
