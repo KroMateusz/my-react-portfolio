@@ -1,6 +1,6 @@
-import ShoppingCart from '../assets/shopping-cart.png';
-import WeatherApp from '../assets/weather-app.png';
-import CreditCard from '../assets/credit-card.png';
+import ShoppingCart from '../assets/photos/shopping-cart.png';
+import WeatherApp from '../assets/photos/weather-app.png';
+import CreditCard from '../assets/photos/credit-card.png';
 
 export const ProjectList = [
 	{
