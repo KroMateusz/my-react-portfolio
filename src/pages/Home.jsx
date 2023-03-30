@@ -33,7 +33,9 @@ function Home() {
 					</a>
 				</div>
 			</div>
-			<SkillsList />
+			<div className='skills'>
+				<h1>{SkillsList.map((item) => `${item.skill} `)}</h1>
+			</div>
 		</div>
 	);
 }
