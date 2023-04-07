@@ -1,13 +1,10 @@
 .home {
 	width: 100%;
-	align-items: center;
-	font-family: 'Oswald', sans-serif;
 	color: var(--primary);
 }
 
 .about {
 	width: 100%;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -18,10 +15,10 @@
 }
 
 .about h1 {
-	font-family: 'Oswald', 'Helvetica', sans-serif;
-	font-size: 60px;
+	font-size: 5rem;
 	color: var(--orange);
 	height: 50px;
+	padding: 3rem;
 }
 
 .about .prompt {
@@ -31,7 +28,6 @@
 
 .prompt img {
 	width: 50%;
-	margin: 2rem;
 	border-radius: 40%;
 }
 
@@ -46,31 +42,25 @@
 	padding: 1rem;
 }
 
-.skills {
-	font-size: 35px;
+.skills-images {
+	font-size: 2rem;
 	width: 100%;
-	height: 200px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+	height: auto;
+	display: grid;
+	grid-template-areas: 'a b c d e f';
+	background-color: var(--lighter);
 }
 
-.skills h1 {
-	color: var(--primary);
+.skills-images img {
+	width: 100%;
 }
 
-.skills .list {
-	list-style: none;
-	width: 60%;
-}
-
-.list span {
-	font-size: 20px;
+.skills-images img:nth-child(n) {
+	padding: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
-	.about h2 {
+	.about h1 {
 		font-size: 40px;
 	}
 

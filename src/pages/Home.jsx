@@ -33,8 +33,11 @@ function Home() {
 					</a>
 				</div>
 			</div>
-			<div className='skills'>
-				<h1>{SkillsList.map((item) => `${item.skill} `)}</h1>
+			<h1 className='skills'>My skills: </h1>
+			<div className='skills-images'>
+				{SkillsList.map((item) => (
+					<img src={item.image} key={item.id} />
+				))}
 			</div>
 		</div>
 	);

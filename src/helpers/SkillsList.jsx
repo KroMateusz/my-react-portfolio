@@ -1,4 +1,3 @@
-import React from 'react';
 import Bootstrap from '../assets/icons/Bootstrap.svg';
 import CSS from '../assets/icons/CSS.svg';
 import Git from '../assets/icons/Git.svg';
@@ -14,65 +13,53 @@ import Webpack from '../assets/icons/Webpack-Dark.svg';
 
 const SkillsList = [
 	{
-		skill: 'Bootstrap',
+		id: 1,
 		image: Bootstrap,
 	},
 	{
-		skill: 'CSS',
+		id: 2,
 		image: CSS,
 	},
 	{
-		skill: 'Git',
+		id: 3,
 		image: Git,
 	},
 	{
-		skill: 'HTML',
+		id: 4,
 		image: HTML,
 	},
 	{
-		skill: 'JavaScript',
+		id: 5,
 		image: JavaScript,
 	},
 	{
-		skill: 'NodeJS',
+		id: 6,
 		image: NodeJS,
 	},
 	{
-		skill: 'Postman',
+		id: 7,
 		image: Postman,
 	},
 	{
-		skill: 'ReactIcon',
+		id: 8,
 		image: ReactIcon,
 	},
 	{
-		skill: 'TypeScript',
+		id: 9,
 		image: TypeScript,
 	},
 	{
-		skill: 'Sass',
+		id: 10,
 		image: Sass,
 	},
 	{
-		skill: 'Vue',
+		id: 11,
 		image: Vue,
 	},
 	{
-		skill: 'Webpack',
+		id: 12,
 		image: Webpack,
 	},
 ];
-
-// const SkillsList = () => {
-// 	{
-// 		skillsArr.map((item) => {
-// 			return (
-// 				<div>
-// 					<h1>{item.skill}</h1> <img src={item.image} />
-// 				</div>
-// 			);
-// 		});
-// 	}
-// };
 
 export default SkillsList;
