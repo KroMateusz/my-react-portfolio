@@ -3,7 +3,7 @@ import '../styles/PhotoSection.css';
 
 function PhotoSection() {
 	return (
-		<div className='container'>
+		<div className='photo-container'>
 			<img src={MyPhoto} className='image' />
 		</div>
 	);

@@ -33,7 +33,15 @@ function Home() {
 					</a>
 				</div>
 			</div>
-			<h1 className='skills'>My skills: </h1>
+			<h1
+				className='skills'
+				style={{
+					fontSize: '5rem',
+					padding: '2rem',
+				}}
+			>
+				My skills
+			</h1>
 			<div className='skills-images'>
 				{SkillsList.map((item) => (
 					<img src={item.image} key={item.id} />

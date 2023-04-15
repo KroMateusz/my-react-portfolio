@@ -1,6 +1,11 @@
-.container {
+.photo-container {
+	height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50vh;
+}
+
+.photo-container .image {
+	width: 50%;
+	border-radius: 40%;
 }

@@ -1,4 +1,7 @@
 .container {
+	background-image: url('../assets/photos/background.jpg');
+	background-position: center;
+	background-size: cover;
 	height: 72.5vh;
 	font-size: 2rem;
 }
