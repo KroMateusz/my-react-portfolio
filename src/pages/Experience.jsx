@@ -58,7 +58,8 @@ function Experience() {
 					<h3 className='vertical-timeline-element-title'>
 						First steps on GitHub and JavaScript and finishing the
 						courses on Udemy. First projects using HTML, CSS, JS and
-						pushing code to GitHub. Webpack, ESLint, Npm, Yarn.
+						pushing code to GitHub. Webpack, ESLint, Npm, Yarn,
+						Object-Oriented Programming.
 					</h3>
 					<p>Wprowadzenie do Git i GitHub - Samuraj Programowania</p>
 					<p>Programowanie w JavaScript - Samuraj Programowania</p>

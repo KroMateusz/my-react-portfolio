@@ -4,6 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhotoSection from '../helpers/PhotoSection.jsx';
 import SkillsList from '../helpers/SkillsList.jsx';
 import '../styles/Home.css';
+import CertificatesList from '../helpers/CertificatesList.jsx';
 
 function Home() {
 	return (
@@ -33,17 +34,16 @@ function Home() {
 					</a>
 				</div>
 			</div>
-			<h1
-				className='skills'
-				style={{
-					fontSize: '5rem',
-					padding: '2rem',
-				}}
-			>
-				My skills
-			</h1>
+			<div className='skills-container'>
+				<h1 className='skills-container-h1'>My skills</h1>
+			</div>
 			<div className='skills-images'>
 				{SkillsList.map((item) => (
+					<img src={item.image} key={item.id} />
+				))}
+			</div>
+			<div className='certificates-list'>
+				{CertificatesList.map((item) => (
 					<img src={item.image} key={item.id} />
 				))}
 			</div>

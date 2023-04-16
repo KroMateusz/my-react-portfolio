@@ -15,7 +15,7 @@ function Contact() {
 		console.log(conFom);
 	};
 	return (
-		<div className='container mt-5'>
+		<div className='container'>
 			<h2 className='mb-3'>Send your message</h2>
 			<form onSubmit={onSubmit}>
 				<div className='mb-3'>

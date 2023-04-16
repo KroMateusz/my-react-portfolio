@@ -2,8 +2,16 @@
 	background-image: url('../assets/photos/background.jpg');
 	background-position: center;
 	background-size: cover;
-	height: 72.5vh;
+	background-repeat: no-repeat;
+	height: 80vh;
 	font-size: 2rem;
+	max-width: 100vw;
+	padding: 2.5rem;
+}
+
+.btn {
+	font-size: 2.5rem;
+	padding: 1rem 2rem;
 }
 
 .btn:hover {
@@ -14,7 +22,18 @@
 
 @media only screen and (max-width: 900px) {
 	.container {
-		height: 75vh;
+		height: 80vh;
 		font-size: 1.5rem;
+	}
+	.btn {
+		font-size: 2rem;
+		padding: 0.75rem 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.btn {
+		font-size: 1.5rem;
+		padding: 0.5rem 1rem;
 	}
 }

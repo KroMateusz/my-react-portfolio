@@ -1,6 +1,7 @@
 .home {
 	width: 100%;
 	color: var(--primary);
+	overflow: hidden;
 }
 
 .about {
@@ -39,21 +40,67 @@
 	transition: 0.2s linear;
 }
 
+.skills-container {
+	padding: 0.5rem;
+	background-color: var(--lighter);
+}
+.skills-container-h1 {
+	width: 15%;
+	position: relative;
+	left: 42.5%;
+	font-size: 4.5rem;
+	color: white;
+	animation: leftToRight 5s 1 ease-in-out;
+}
+
 .skills-images {
 	font-size: 2rem;
 	width: 100%;
 	height: auto;
-	display: grid;
-	grid-template-areas: 'a b c d e f';
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	background-color: var(--lighter);
 }
 
 .skills-images img {
-	width: 100%;
+	width: 14%;
 }
 
 .skills-images img:nth-child(n) {
-	padding: 3rem;
+	margin: 1rem;
+}
+
+.certificates-list {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: var(--primary);
+}
+
+.certificates-list img {
+	width: 20%;
+	margin: 10px;
+}
+
+@keyframes leftToRight {
+	0% {
+		left: 0%;
+	}
+	25% {
+		left: 85%;
+	}
+	50% {
+		left: 25%;
+	}
+	75% {
+		left: 60%;
+	}
+	100% {
+		left: 42.5%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
