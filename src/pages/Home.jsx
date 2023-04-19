@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhotoSection from '../helpers/PhotoSection.jsx';
@@ -14,9 +14,31 @@ function Home() {
 					<h1>Hi! My name is Mateusz</h1>
 					<PhotoSection />
 					<p>
-						I am a frontend developer with a drive for growth and
+						<span>I</span>
+						<span>am</span>
+						<span>a</span>
+						<span>frontend </span>
+						<span>developer</span>
+						<span>with</span>
+						<span>a</span>
+						<span>drive</span>
+						<span>for</span>
+						<span>growth</span>
+						<span>and</span>
+						<span>programming,</span>
+						<span>who</span>
+						<span>gained</span>
+						<span>knowledge</span>
+						<span>independently</span>
+						<span>using</span>
+						<span>Youtube,</span>
+						<span>Udemy</span>
+						<span>and</span>
+						<span>Codecademy.</span>
+
+						{/* I am a frontend developer with a drive for growth and
 						programming, who gained knowledge independently using
-						YouTube, Udemy, and Codecademy.
+						YouTube, Udemy, and Codecademy. */}
 					</p>
 					<a
 						href='https://github.com/KroMateusz'
@@ -50,5 +72,9 @@ function Home() {
 		</div>
 	);
 }
+
+const showOnScroll = () => {
+	const showText = window.innerHeight;
+};
 
 export default Home;
