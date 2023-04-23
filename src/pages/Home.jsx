@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import PhotoSection from '../helpers/PhotoSection.jsx';
 import SkillsList from '../helpers/SkillsList.jsx';
-import '../styles/Home.css';
 import CertificatesList from '../helpers/CertificatesList.jsx';
+import '../styles/Home.css';
+import MyPhoto from '../assets/photos/my-photo.png';
 
 function Home() {
 	return (
@@ -12,7 +11,9 @@ function Home() {
 			<div className='about'>
 				<div className='prompt'>
 					<h1>Hi! My name is Mateusz</h1>
-					<PhotoSection />
+					<div className='photo-container'>
+						<img src={MyPhoto} className='image' />
+					</div>
 					<p>
 						<span>I</span>
 						<span>am</span>
@@ -57,13 +58,14 @@ function Home() {
 				</div>
 			</div>
 			<div className='skills-container'>
-				<h1 className='skills-container-h1'>My skills</h1>
+				<h1>My skills</h1>
+				<div className='skills-images'>
+					{SkillsList.map((item) => (
+						<img src={item.image} key={item.id} />
+					))}
+				</div>
 			</div>
-			<div className='skills-images'>
-				{SkillsList.map((item) => (
-					<img src={item.image} key={item.id} />
-				))}
-			</div>
+
 			<div className='certificates-list'>
 				{CertificatesList.map((item) => (
 					<img src={item.image} key={item.id} />
@@ -72,9 +74,5 @@ function Home() {
 		</div>
 	);
 }
-
-const showOnScroll = () => {
-	const showText = window.innerHeight;
-};
 
 export default Home;

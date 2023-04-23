@@ -5,7 +5,6 @@
 }
 
 .about {
-	height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -19,21 +18,30 @@
 	color: white;
 }
 
-.about h1 {
+.prompt {
+	height: 85vh;
+	margin: 1rem;
+	width: 50%;
+	font-size: 2rem;
+}
+
+.prompt h1 {
 	font-size: 5rem;
 	margin: 1rem;
 }
 
-.about .prompt {
-	margin: 1rem;
-	width: 43%;
-	font-size: 2rem;
+.photo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
 }
 
-.prompt svg {
-	font-size: 60px;
-	margin: 5px;
-	color: white;
+.photo-container .image {
+	opacity: 1;
+	width: 50%;
+	border-radius: 40%;
+	animation: photoAnimation 5s ease-in-out;
 }
 
 .prompt p {
@@ -129,6 +137,12 @@ span:nth-child(21) {
 	animation: fade-in 0.8s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
+.prompt svg {
+	font-size: 60px;
+	margin: 5px;
+	color: white;
+}
+
 .prompt a {
 	margin: 1rem;
 	padding: 1rem;
@@ -142,13 +156,14 @@ span:nth-child(21) {
 	padding: 0.5rem;
 	background-color: var(--lighter);
 }
-.skills-container-h1 {
-	width: 15%;
+
+.skills-container h1 {
 	position: relative;
-	left: 42.5%;
-	font-size: 4.5rem;
+	left: calc((100vw - 25%) / 2);
+	width: 25%;
 	color: white;
-	animation: leftToRight 5s 1 ease-in-out;
+	font-size: 5rem;
+	animation: leftToRight 5s ease-in-out 1;
 }
 
 .skills-images {
@@ -186,6 +201,15 @@ span:nth-child(21) {
 	margin: 10px;
 }
 
+@keyframes photoAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes scale {
 	100% {
 		transform: scale(1);
@@ -203,16 +227,16 @@ span:nth-child(21) {
 		left: 0%;
 	}
 	25% {
-		left: 85%;
+		left: 75%;
 	}
 	50% {
-		left: 25%;
+		left: 20%;
 	}
 	75% {
-		left: 60%;
+		left: 50%;
 	}
 	100% {
-		left: 42.5%;
+		left: calc((100vw - 25%) / 2);
 	}
 }
 
