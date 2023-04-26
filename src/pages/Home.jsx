@@ -2,8 +2,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SkillsList from '../helpers/SkillsList.jsx';
 import CertificatesList from '../helpers/CertificatesList.jsx';
-import '../styles/Home.css';
+import ShowOnScroll from '../helpers/ShowOnScroll.jsx';
 import MyPhoto from '../assets/photos/my-photo.png';
+import '../styles/Home.css';
 
 function Home() {
 	return (
@@ -36,10 +37,6 @@ function Home() {
 						<span>Udemy</span>
 						<span>and</span>
 						<span>Codecademy.</span>
-
-						{/* I am a frontend developer with a drive for growth and
-						programming, who gained knowledge independently using
-						YouTube, Udemy, and Codecademy. */}
 					</p>
 					<a
 						href='https://github.com/KroMateusz'
@@ -58,14 +55,13 @@ function Home() {
 				</div>
 			</div>
 			<div className='skills-container'>
-				<h1>My skills</h1>
+				<ShowOnScroll />
 				<div className='skills-images'>
 					{SkillsList.map((item) => (
 						<img src={item.image} key={item.id} />
 					))}
 				</div>
 			</div>
-
 			<div className='certificates-list'>
 				{CertificatesList.map((item) => (
 					<img src={item.image} key={item.id} />

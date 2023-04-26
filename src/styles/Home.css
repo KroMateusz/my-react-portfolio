@@ -157,7 +157,11 @@ span:nth-child(21) {
 	background-color: var(--lighter);
 }
 
-.skills-container h1 {
+.hide {
+	display: none;
+}
+
+.skills-container .show {
 	position: relative;
 	left: calc((100vw - 25%) / 2);
 	width: 25%;
@@ -250,25 +254,31 @@ span:nth-child(21) {
 		width: 40%;
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 	.about h1 {
-		font-size: 40px;
+		font-size: 3rem;
 	}
 
 	.about .prompt {
-		margin-top: 10px;
-		font-size: 20px;
+		font-size: 2rem;
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.about h1 {
+		font-size: 3rem;
+	}
+
+	.about .prompt {
+		font-size: 1.75rem;
 		width: 80%;
 	}
 
-	.skills {
-		text-align: center;
+	.skills-container .show {
+		font-size: 2rem;
 	}
-	.list {
-		padding: 0;
-	}
-
-	.skills h2 {
-		font-size: 30px;
+	.certificates-list img {
+		width: 25%;
 	}
 }

@@ -14,7 +14,10 @@ function Experience() {
 				<VerticalTimelineElement
 					className='vertical-timeline-element--education'
 					date='2020'
-					iconStyle={{ background: 'var(--primary)', color: '#fff' }}
+					iconStyle={{
+						background: 'var(--primary)',
+						color: '#fff',
+					}}
 					icon={<SchoolIcon />}
 				>
 					<h3 className='vertical-timeline-element-title'>
