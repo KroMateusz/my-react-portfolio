@@ -11,7 +11,13 @@ function Home() {
 		<div className='home'>
 			<div className='about'>
 				<div className='prompt'>
-					<h1>Hi! My name is Mateusz</h1>
+					<h1>
+						<span>Hi!</span>
+						<span>My</span>
+						<span>name</span>
+						<span>is</span>
+						<span>Mateusz</span>
+					</h1>
 					<div className='photo-container'>
 						<img src={MyPhoto} className='image' />
 					</div>
@@ -43,14 +49,18 @@ function Home() {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<GitHubIcon />
+						<span>
+							<GitHubIcon />
+						</span>
 					</a>
 					<a
 						href='https://www.linkedin.com/in/mateusz-krochmal-34936117b/'
 						target='_blank'
 						rel='noreferrer'
 					>
-						<LinkedInIcon />
+						<span>
+							<LinkedInIcon />
+						</span>
 					</a>
 				</div>
 			</div>
@@ -62,10 +72,13 @@ function Home() {
 					))}
 				</div>
 			</div>
-			<div className='certificates-list'>
-				{CertificatesList.map((item) => (
-					<img src={item.image} key={item.id} />
-				))}
+			<div className='certificates-container'>
+				<h2 className='certificates-heading'>Completed Courses</h2>
+				<div className='certificates-list'>
+					{CertificatesList.map((item) => (
+						<img src={item.image} key={item.id} />
+					))}
+				</div>
 			</div>
 		</div>
 	);
