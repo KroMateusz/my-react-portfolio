@@ -215,7 +215,9 @@ a span:nth-child(1) {
 .certificates-heading {
 	background-color: var(--primary);
 	color: white;
-	font-size: 4rem;
+	font-size: 5rem;
+	padding: 1rem;
+	margin-bottom: 0;
 }
 
 .certificates-list {
@@ -225,12 +227,12 @@ a span:nth-child(1) {
 	flex-direction: row;
 	flex-wrap: wrap;
 	background-color: var(--primary);
+	padding: 0.5rem 1rem;
 }
 
 .certificates-list img {
 	width: 20%;
-	padding: 0px 10px;
-	padding-bottom: 30px;
+	padding: 0.5rem 1rem;
 }
 
 @keyframes photoAnimation {

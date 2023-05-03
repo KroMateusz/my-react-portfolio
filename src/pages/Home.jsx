@@ -73,7 +73,7 @@ function Home() {
 				</div>
 			</div>
 			<div className='certificates-container'>
-				<h2 className='certificates-heading'>Completed Courses</h2>
+				<h1 className='certificates-heading'>Completed Courses</h1>
 				<div className='certificates-list'>
 					{CertificatesList.map((item) => (
 						<img src={item.image} key={item.id} />

@@ -6,6 +6,7 @@
 	text-align: left;
 	padding: 0.8em 0;
 	opacity: 0.7;
+	filter: none;
 }
 
 .vertical-timeline-element-icon.bounce-in {
